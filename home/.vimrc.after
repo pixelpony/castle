@@ -1,0 +1,60 @@
+"colorscheme desert256
+colorscheme zendnb
+
+set shiftwidth=4               	" use indents of 4 spaces
+"set noexpandtab    	       		" tabs are tabs, not spaces
+set expandtab    	       		" tabs are spaces, actually
+set tabstop=4 					" an indentation every four columns
+
+set tags=tags;/
+
+set winminheight=0 				" windows can be 0 line high 
+set vb                      	" visual bell
+
+set diffopt+=vertical           " 3 way diff should split vertically
+
+" Easier moving in tabs and windows
+map <C-J> <C-W>j<C-W>_
+map <C-K> <C-W>k<C-W>_
+map <C-H> <C-W>h<C-W>_
+map <C-H> gT
+map <C-L> gt
+
+"Select (linewise) the text you just pasted 
+nnoremap <leader>v V`]
+
+nmap <silent> <leader>/ :nohlsearch<CR>
+
+if has('gui_running')
+	set guioptions-=T          	" remove the toolbar
+	set guioptions-=m
+	set lines=300 columns=300
+	winpos 0 0
+	set mousehide
+	set guicursor=a:blinkwait60000-blinkon600-blinkoff300
+    set guifont=Meslo\ LG\ S\ Regular\ for\ Powerline:h10
+	set linespace=2
+endif
+
+" NERD Tree configs
+let NERDChristmasTree=1
+let NERDTreeChDirMode=0
+let NERDTreeShowBookmarks=1
+let NERDTreeShowHidden=1
+
+" NrrwRgn configs
+xmap  <leader>- <Plug>NrrwrgnDo
+
+" BufferGator configs
+let g:buffergator_viewport_split_policy="R"
+let g:buffergator_sort_regime="basename"
+map <leader>b :BuffergatorToggle<CR>
+
+augroup filetypedetect
+    autocmd BufNewFile,BufRead *.twig set filetype=htmljinja
+	"au! BufRead,BufNewFile *.twig		setfiletype htmltwig
+	"au! BufRead,BufNewFile *.less		setfiletype css
+augroup END
+
+cd ~/apps/services/Frackend
+
