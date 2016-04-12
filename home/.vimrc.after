@@ -28,6 +28,7 @@ nmap <silent> <leader>/ :nohlsearch<CR>
 if has('gui_running')
 	set guioptions-=T          	" remove the toolbar
 	set guioptions-=m
+	set guioptions-=L           " kills some split resize funkiness
 	set lines=300 columns=300
 	winpos 0 0
 	set mousehide
@@ -56,5 +57,5 @@ augroup filetypedetect
 	"au! BufRead,BufNewFile *.less		setfiletype css
 augroup END
 
-cd ~/apps/services/Frackend
+cd ~/repos/yarnweb
 

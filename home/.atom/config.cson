@@ -1,0 +1,83 @@
+"*":
+  "atom-alignment": {}
+  "atom-spotify":
+    displayOnLeftSide: false
+    showEqualizer: true
+  "autocomplete-plus": {}
+  "color-picker":
+    preferredFormat: "HEX"
+    uppercaseColorValues: true
+  core:
+    disabledPackages: [
+      "aligner"
+      "tree-view-open-files"
+      "linter-scss-lint"
+      "linter"
+      "minimap"
+      "minimap-find-and-replace"
+      "minimap-git-diff"
+      "minimap-highlight-selected"
+      "minimap-linter"
+      "terminal-status"
+      "color-picker"
+    ]
+    themes: [
+      "isotope-ui"
+      "zenburn"
+    ]
+  editor:
+    fontFamily: "Hack"
+    fontSize: 11
+    invisibles: {}
+    lineHeight: 1.6
+    showIndentGuide: true
+    tabLength: 4
+  "exception-reporting":
+    userId: "6009e879-1469-bb13-99c7-b0f94b4c5358"
+  "highlight-selected": {}
+  "isotope-ui":
+    backgroundColor: "false"
+    customBackgroundColor: true
+    customBackgroundColorPicker:
+      red: 81
+      green: 80
+      blue: 83
+      alpha: 1
+    fontFamily: "Source Sans Pro"
+    fontWeight: "Regular"
+  "linter-scss-lint": {}
+  minimap:
+    plugins:
+      "find-and-replace": true
+      "git-diff": true
+      "highlight-selected": true
+      linter: true
+  "save-session":
+    dataSaveFolder: "/Users/derekodegard/.atom/packages/save-session/projects"
+    fullScreen: true
+    project: "/Users/derekodegard/repos/yarnweb/yarn/assets/scripts"
+    projects: [
+      "/Users/derekodegard/repos/yarnweb/yarn/assets/scripts"
+      "/Users/derekodegard/repos/yarnweb/yarn/assets/styles"
+      "/Users/derekodegard/repos/yarnweb/yarn/templates"
+    ]
+    treeSize: 259
+    windowHeight: 900
+    windowWidth: 1440
+    windowX: 0
+    windowY: 0
+  "symbols-tree-view":
+    autoHide: true
+    autoToggle: true
+  tabs:
+    usePreviewTabs: true
+  "tabs-to-spaces":
+    onSave: "untabify"
+  "tree-view":
+    hideIgnoredNames: true
+    hideVcsIgnoredFiles: true
+  "tree-view-open-files":
+    maxHeight: 500
+  "vim-mode": {}
+  welcome:
+    showOnStartup: false

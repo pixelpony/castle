@@ -17,17 +17,33 @@
 	whitespace = trailing-space,space-before-tab
 	quotepath = false
 	excludesfile = /Users/derek/.gitignore
-	editor = vim -f
+	editor = atom --wait
 [diff]
 	renames = copies
 	mnemonicprefix = true
 	tool = diffmerge
+[grep]
+    lineNumber = true
 [color]
     ui = auto
-    status = auto
-    branch = auto
-    diff = auto
     interactive = auto
+[color "grep"]
+    linenumber = yellow bold
+    match = green reverse
+    filename = magenta
+[color "branch"]
+    current = yellow reverse
+    local = yellow
+    remote = green
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+[color "status"]
+    added = yellow
+    changed = green
+    untracked = red
 [branch]
 	autosetupmerge = true
 [push]
@@ -60,3 +76,7 @@
 [mergetool "diffmerge"]
 	cmd = "diffmerge --merge --result=\"$MERGED\" \"$LOCAL\" \"$(if test -f \"$BASE\"; then echo \"$BASE\"; else echo \"$LOCAL\"; fi)\" \"$REMOTE\""
 	trustExitCode = true
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true

@@ -1,0 +1,15 @@
+package bang-bang
+package battery
+package config
+package copy
+package fonts
+package git-flow
+package osx
+package powerline
+package ssh-term-helper
+package tab
+package thefuck
+package title
+theme clearance
+theme cmorrell
+theme default

@@ -15,6 +15,9 @@ alias du='du -h -c'     # Calculate total disk usage for a folder
 alias mkdeploy='git subtree push --prefix=dist origin deploy'
 #alias ls="ls;exit"
 
+alias yarnenv="cd ~/repos/yarnweb/; source venv/bin/activate; export YARN_CONFIG='yarn.conf'"
+alias yarndir="cd ~/repos/yarnweb/"
+
 case $OSTYPE in
     linux*)
         # Linux Specific
@@ -59,7 +62,8 @@ export JAVA_HOME=$(/usr/libexec/java_home)
 export WORKON_HOME=/opt/virtualenvs
 export PIP_VIRTUALENV_BASE=$WORKON_HOME
 export PIP_RESPECT_VIRTUALENV=true
-source /usr/local/bin/virtualenvwrapper.sh
+
+# source /usr/local/bin/virtualenvwrapper.sh
 
 # Prompt Colors
 BGREEN='\[\033[1;32m\]'
@@ -144,4 +148,4 @@ export NODE_PATH=/usr/local/lib/node:/usr/local/lib/node_modules
 
 export PATH=$HOME/bin:$PATH
 
-. ~/apps/powerline/powerline/bindings/bash/powerline.sh
+. ~/repos/powerline/powerline/bindings/bash/powerline.sh

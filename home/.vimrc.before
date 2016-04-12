@@ -1,2 +1,2 @@
 let mapleader=','
-
+set shell=bash
